@@ -1,4 +1,4 @@
-import cart_img from "./assets/shopping_cart.jpg"
+import cart_img from "../assets/shopping_cart.jpg"
 
 function ShoppingListButton(){
     return(
