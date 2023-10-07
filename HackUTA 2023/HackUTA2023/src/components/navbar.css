@@ -1,2 +1,15 @@
 .navbar {
+    width: auto;
+    height: 10vh;
+    border: 1px solid red;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    display: inline;
 }
