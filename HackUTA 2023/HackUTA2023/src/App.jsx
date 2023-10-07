@@ -37,6 +37,14 @@ function App() {
                     <p class = "item">Dell XPS</p>
                     <p>$1599.99</p>
                 </div>
+                <div class = "card">
+                    <p class = "item">Surface Laptop Go 2</p>
+                    <p>$599.99</p>
+                </div>
+                <div class = "card">
+                    <p class = "item">Surface Laptop 5</p>
+                    <p>$950.99</p>
+                </div>
                 </div>
             </div>
         </Card>
