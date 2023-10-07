@@ -2,16 +2,17 @@ import { useState } from 'react'
 import NavBar from "./components/navbar"
 import Card from "./UI/Card"
 import ShoppingListButton from './components/ShoppingListButton'
+import shopping_cart from './assets/shopping_cart.jpg'
 function App() {
     
     return (
         <div>
 
         <NavBar>
-            <ShoppingListButton>
-                
-            </ShoppingListButton>
+
         </NavBar>
+        <ShoppingListButton>
+        </ShoppingListButton>
         <Card>
             <div class = "computers">
                 <div class = "card">
