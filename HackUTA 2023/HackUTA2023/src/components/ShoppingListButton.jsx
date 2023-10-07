@@ -5,7 +5,7 @@ function ShoppingListButton(){
         console.log("hello");
     }
     return(
-        <button onClick={clickHandler}>
+        <button class="shoppingButton" onClick={clickHandler}>
             <img src={cart_img} alt="shopping cart"></img>
         </button>
     )
