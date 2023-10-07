@@ -1,9 +1,12 @@
 import cart_img from "../assets/shopping_cart.jpg"
-
+import "./ShoppingListButton.css"
 function ShoppingListButton(){
+    function clickHandler(){
+        console.log("hello");
+    }
     return(
-        <button>
-            <img src={cart_img}></img>
+        <button class="shoppingButton" onClick={clickHandler}>
+            <img src={cart_img} alt="shopping cart"></img>
         </button>
     )
 }

@@ -1,17 +1,19 @@
 import { useState } from 'react'
 import NavBar from "./components/navbar"
 import Card from "./UI/Card"
+<<<<<<< HEAD
 import ShoppingListButton from './components/ShoppingListButton'
 import "./App.css"
+=======
+
+>>>>>>> 238fb11881191b4e991b8db6b8ffd9ddf6a924af
 function App() {
     
     return (
         <div>
 
         <NavBar>
-            <ShoppingListButton>
-                
-            </ShoppingListButton>
+
         </NavBar>
         <Card>
         <div class = "container">
