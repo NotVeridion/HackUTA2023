@@ -2,7 +2,10 @@ import { useState } from 'react'
 import NavBar from "./components/navbar"
 import Card from "./UI/Card"
 import "./App.css"
+<<<<<<< HEAD
 import ShoppingList from './components/ShoppingList'
+=======
+>>>>>>> 85101d52dd1324c046e0df45cfe36b32bc1d9f2b
 function App() {
     const[pageState, setPageState] = useState(0)
     function PageHandler(){
@@ -15,44 +18,98 @@ function App() {
 
         </NavBar>
         <Card>
-        <div class = "container">
+        <body>
+            <div class="container">
 
-            <div class = "computers">
-                <div class = "card">
-                    <p class = "item">Macbook Air</p>
-                    <p>$999.99</p>
+                <div class="header">
+                <div class="logo">Ecomerence Logo</div>
+                <div class="menu">
+                <ul>
+                        <li>header link one</li>
+                        <li>header link two</li>
+                        <li>header link three</li>
+                        <li>header link four</li>
+                 </ul>
                 </div>
-                <div class = "card">
-                    <p class = "item">Macbook Pro</p>
-                    <p>$1399.99</p>
-                </div>
-                <div class = "card">
-                    <p class = "item">HP Intel Celeron</p>
-                    <p>$1399.99</p>
-                </div>
-                <div class = "card">
-                    <p class = "item">HP Chromebookr</p>
-                    <p>$649.99</p>
-                </div>
-                <div class = "card">
-                    <p class = "item">Lenovo Yoga 7i</p>
-                    <p>$749.99.99</p>
-                </div>
-                <div class = "card">
-                    <p class = "item">Dell XPS</p>
-                    <p>$1599.99</p>
-                </div>
-                <div class = "card">
-                    <p class = "item">Surface Laptop Go 2</p>
-                    <p>$599.99</p>
-                </div>
-                <div class = "card">
-                    <p class = "item">Surface Laptop 5</p>
-                    <p>$950.99</p>
-                </div>
-                </div>
-        </div>
+            </div>
 
+            <div class="sidebar">
+            <div class="photo">
+                <p>placeholder for image</p>    
+            </div>
+            <div class="side-content">Box 1
+            </div>
+            <div class="side-content">Box 2
+            </div>
+            <div class="side-content">Box 3
+            </div>
+            </div>
+
+            <div class="nav">
+                <ul>
+                    <li>Latest Technology</li>
+                    <li>Most Viewed Technology</li>
+                    <li>Featured</li>
+                </ul>
+            </div>
+
+            <div class="Computers">
+                <div class="card">
+                    <p class="title">Macbook Air</p>
+                    <p>placeholder for image</p> 
+                    <p>placeholder for price</p> 
+                    
+                </div>
+                <div class="card">
+                    <p class="title">Macbook Pro</p>
+                    <p>placeholder for image</p> 
+                    <p>placeholder for price</p> 
+
+                 </div>
+                <div class="card">
+                    <p class="title">Lenovo</p>
+                    <p>placeholder for image</p> 
+                    <p>placeholder for price</p> 
+
+                </div>
+                <div class="card">
+                     <p class="title">Windows</p>
+                     <p>placeholder for image</p> 
+                     <p>placeholder for price</p> 
+
+                </div>
+                 <div class="card">
+                    <p class="title">Lenovo</p>
+                    <p>placeholder for image</p> 
+                    <p>placeholder for price</p> 
+
+                </div>
+                 <div class="card">
+                    <p class="title">Surface Pro</p>
+                    <p>placeholder for image</p> 
+                    <p>placeholder for price</p> 
+
+                </div>
+                <div class="card">
+                    <p class="title">Lenovo</p>
+                    <p>placeholder for image</p> 
+                    <p>placeholder for price</p> 
+
+                </div>
+                <div class="card">
+                    <p class="title">Macbook Pro M2</p>
+                    <p>placeholder for image</p> 
+                    <p>placeholder for price</p> 
+
+                </div>
+            </div>
+
+      <div class="footer">
+        <p>E commis</p>
+      </div>
+      
+    </div>
+  </body>
         </Card>
         </div>
         }
