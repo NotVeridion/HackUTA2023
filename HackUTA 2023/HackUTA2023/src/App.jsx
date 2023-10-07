@@ -2,6 +2,7 @@ import { useState } from 'react'
 import NavBar from "./components/navbar"
 import Card from "./UI/Card"
 import ShoppingListButton from './components/ShoppingListButton'
+import "./App.css"
 function App() {
     
     return (
@@ -13,6 +14,8 @@ function App() {
             </ShoppingListButton>
         </NavBar>
         <Card>
+        <div class = "container">
+
             <div class = "computers">
                 <div class = "card">
                     <p class = "item">Macbook Air</p>
@@ -21,9 +24,10 @@ function App() {
                 <div class = "card">
                     <p class = "item">Macbook Pro</p>
                     <p>$1399.99</p>
-                    <div class = "card">
-                    <p class = "item">HP Intel Core i3</p>
-                    <p>$849.99</p>
+                </div>
+                <div class = "card">
+                    <p class = "item">HP Intel Celeron</p>
+                    <p>$1399.99</p>
                 </div>
                 <div class = "card">
                     <p class = "item">HP Chromebookr</p>
@@ -46,7 +50,8 @@ function App() {
                     <p>$950.99</p>
                 </div>
                 </div>
-            </div>
+        </div>
+
         </Card>
         </div>
     )
