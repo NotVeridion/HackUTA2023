@@ -93,12 +93,12 @@ function App() {
 <header class = "main">
     <div class = "banner">
         <h1 class = "banner-title">Computers For You</h1>
-        <button class = "banner-btn">shop now</button>
+        <button class = "banner-btn"><a href="#computer-section">shop now</a></button>
     </div>
 </header>
 
   <div class="container">
-    <div class="header">
+    <div class="header" id="computer-section">
       <div class="logo">Our Computers</div>
     </div>
 
