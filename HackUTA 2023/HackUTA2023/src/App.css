@@ -1,9 +1,20 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700");
+
+:root {
+  --primaryColor: #f09d51;
+  --mainWhite: #fff;
+  --mainBlack: #222;
+  --mainGrey: #ececec;
+  --mainSpacing: 0.1rem;
+  --mainTransition: all 0.3s linear;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
-
+/* Nav Bar */
   .navigation {
     position: sticky;
     top: 0;
@@ -32,14 +43,51 @@
   }
   .cart-items {
     position: absolute;
-    top: -8px;
-    right: -8px;
+    top: 5px;
+    right: 150px;
     background: var(--primaryColor);
     padding: 0 5px;
     border-radius: 30%;
     color: var(--mainWhite);
   }
+
+  /* Front page */
+  .main {
+    min-height: calc(100vh - 60px);
+    background: url("./assets/tech-backgroud.jpeg") center/cover no-repeat;
+    display: flex;
+    color: var(--mainWhite);
+    align-items: center;
+    justify-content: center;
+  }
+  .banner {
+    text-align: center;
+    display: inline-block;
+    padding: 2rem;
+  }
+  .banner-title {
+    font-size: 3.4rem;
+    text-transform: uppercase;
+    letter-spacing: var(--mainSpacing);
+    margin-bottom: 3rem;
+  }
+  .banner-btn {
+    padding: 1rem 3rem;
+    text-transform: uppercase;
+    letter-spacing: var(--mainSpacing);
+    font-size: 1rem;
+    background: black;
+    color: var(--mainWhite);
+    border: 1px solid black;
+    transition: var(--mainTransition);
+    cursor: pointer;
+  }
+  .banner-btn:hover {
+    background: transparent;
+    color: var(--mainWhite)
+  }
   
+  /* Shopping site*/
   .container {
     text-align: center;
   }

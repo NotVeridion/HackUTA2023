@@ -68,7 +68,8 @@ function App() {
         <div>
         {pageState === 0 && <div>
         <body>
-        <nav class = "navigation">
+
+    <nav class = "navigation">
     <div class = "navbar-center">
             <span class = "nav-icon">
                 <img src={nine} alt="navigation bars" style={{ width: '30px', height: '30px' }} />
@@ -83,9 +84,16 @@ function App() {
     </div>
 </nav>
 
+<header class = "main">
+    <div class = "banner">
+        <h1 class = "banner-title">Computers For You</h1>
+        <button class = "banner-btn">shop now</button>
+    </div>
+</header>
+
   <div class="container">
     <div class="header">
-      <div class="logo">Computers</div>
+      <div class="logo">Our Computers</div>
     </div>
 
     <div class="computers">
@@ -94,9 +102,6 @@ function App() {
         ))}
     </div>
 
-    <div class="footer">
-      <p>E commis</p>
-    </div>
   </div>
 </body>
 
