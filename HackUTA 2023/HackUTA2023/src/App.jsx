@@ -25,48 +25,7 @@ function App() {
     function ReturnHandler(){
         setPageState(0);
     }
-     const laptops = Item()/* [
-        {
-            name: "MacBook Air",
-            price: "$749.99",
-            src: one
-        },
-        {
-            name: "MacbookPro M1",
-            price: "$998.99",
-            src: two
-        },
-        {
-            name: "MacbookPro M2",
-            price: "$1199.99",
-            src: three
-        },
-        {
-            name: "HP Chromebook Intel Celeron",
-            price: "$149.99",
-            src: four
-        },
-        {
-            name: "Dell Inspiron",
-            price: "$549.99",
-            src: five
-        },
-        {
-            name: "HP Envy",
-            price: "$499.99",
-            src: six
-        },
-        {
-            name: "Lenovo Yoga 7i",
-            price: "$899.99",
-            src: seven
-        },
-        {
-            name: "HP AMD Ryzen 3",
-            price: "$540.00",
-            src: eight
-        } 
-    ]*/
+     const laptops = Item()
     console.log(laptops)
     return (
         <div>
