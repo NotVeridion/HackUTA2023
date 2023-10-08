@@ -1,8 +1,13 @@
+import "./ShoppingList.css"
 
-
-function ShoppingList(){
+function ShoppingList(props){
+    function ClickHandler(){
+        props.OnReturn();
+    }
     return(
-        <div>HIIIIIIIIIIIIIIIIIIIIIIIIIi</div>
+        <div>HIIIIIIIIIIIIIIIIIIIIIIIIIi
+            <button onClick={ClickHandler}>Return to Shopping</button>
+        </div>
 
     )
 }
