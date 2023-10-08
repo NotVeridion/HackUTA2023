@@ -58,7 +58,7 @@
   }
   
   .computers {
-    background-color: #bccbde;
+    /* background-color: #bccbde; */
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -76,6 +76,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 15px;
+    width: 300px;
   }
   
   .card p {
