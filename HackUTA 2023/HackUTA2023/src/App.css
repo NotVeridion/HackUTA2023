@@ -1,9 +1,20 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700");
+
+:root {
+  --primaryColor: #f09d51;
+  --mainWhite: #fff;
+  --mainBlack: #222;
+  --mainGrey: #ececec;
+  --mainSpacing: 0.1rem;
+  --mainTransition: all 0.3s linear;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
-
+/* Nav Bar */
   .navigation {
     position: sticky;
     top: 0;
@@ -26,20 +37,63 @@
   .nav-icon {
     font-size: 1.5rem;
   }
+
+  .cart-container {
+    position: relative;
+    cursor: pointer;
+  }
+
   .cart-btn {
     position: relative;
     cursor: pointer;
   }
   .cart-items {
     position: absolute;
-    top: -8px;
-    right: -8px;
+    top: -4px;
+    right: -10px;
     background: var(--primaryColor);
     padding: 0 5px;
     border-radius: 30%;
     color: var(--mainWhite);
   }
+
+  /* Front page */
+  .main {
+    min-height: calc(100vh - 60px);
+    background: url("./assets/tech-backgroud.jpeg") center/cover no-repeat;
+    display: flex;
+    color: var(--mainWhite);
+    align-items: center;
+    justify-content: center;
+  }
+  .banner {
+    text-align: center;
+    display: inline-block;
+    padding: 2rem;
+  }
+  .banner-title {
+    font-size: 3.4rem;
+    text-transform: uppercase;
+    letter-spacing: var(--mainSpacing);
+    margin-bottom: 3rem;
+  }
+  .banner-btn {
+    padding: 1rem 3rem;
+    text-transform: uppercase;
+    letter-spacing: var(--mainSpacing);
+    font-size: 1rem;
+    background: black;
+    color: var(--mainWhite);
+    border: 1px solid black;
+    transition: var(--mainTransition);
+    cursor: pointer;
+  }
+  .banner-btn:hover {
+    background: transparent;
+    color: var(--mainWhite)
+  }
   
+  /* Shopping site*/
   .container {
     text-align: center;
   }
@@ -47,7 +101,6 @@
   .container div {
     padding: 15px;
     font-size: 32px;
-    font-family: Helvetica;
     font-weight: bold;
     color: black;
   }
@@ -57,50 +110,23 @@
     background-color: white;
   }
   
-  .menu ul,
-  .menu li {
-    font-size: 16px;
-    list-style-type: none;
-  }
-  
-  .sidebar {
-    background-color: #FF7755;
-    grid-row: 2 / 4;
-    display: grid;
-    gap: 50px;
-  }
-  
-  .sidebar .photo {
-    background-color: white;
-    color: black;
-    font-size: 12px;
-    font-weight: normal;
-    border-radius: 10px;
-  }
-  
-  .sidebar .side-content {
-    background-color: white;
-    color: black;
-    font-size: 16px;
-    font-weight: normal;
-  }
-  
-  .nav {
-    background-color: #FF7755;
-  }
-  
-  .nav ul li {
-    font-size: 16px;
-    text-transform: uppercase;
-  }
-  
   .computers {
-    /* background-color: #bccbde; */
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 15px;
     padding: 15px;
+  }
+  @media screen and (max-width: 768px) {
+    .computers {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .computers {
+      grid-template-columns: 1fr; 
+    }
   }
   
   .computers .card1{
@@ -118,7 +144,7 @@
   
   .card1 p {
     color: black;
-    font-weight: normal;
+    font-weight: bold;
     font-size: 14px;
     padding: 5px;
   }
@@ -129,17 +155,30 @@
   }
 
   .card1 .price{
+    font-weight: 600;
     color: green;
   }
   
-  .footer {
-    background-color: white;
+  .bag-btn {
     position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 2.5rem;     
+    top: 70%;
+    right: 0;
+    background: var(--primaryColor);
+    border: none;
+    text-transform: uppercase;
+    padding: 0.5rem 0.75rem;
+    letter-spacing: var(--mainSpacing);
+    font-weight: bold;
+    transition: var(--mainTransition);
+    transform: translateX(101%);
+    cursor: pointer;
   }
-  
-  .footer p {
-    font-size: 13px
+
+  /* Shopping button */
+  .bag-btn:hover {
+    color: var(--mainWhite);
+  }
+
+  .computers:hover .bag-btn {
+    transform: translateX(0);
   }

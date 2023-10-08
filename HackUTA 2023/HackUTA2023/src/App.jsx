@@ -68,35 +68,47 @@ function App() {
         <div>
         {pageState === 0 && <div>
         <body>
-        <nav class = "navigation">
+
+    <nav class = "navigation">
     <div class = "navbar-center">
             <span class = "nav-icon">
                 <img src={nine} alt="navigation bars" style={{ width: '30px', height: '30px' }} />
             </span>
             <h3>E-Commerence</h3>
+            <div class = "cart-container">
             <div class = "cart-bin">
             <span class = "nav-icon">
                 <ShoppingListButton numberPasser={PageHandler} ></ShoppingListButton>
             </span>
             <div class = "cart-items">0</div>
-        </div>
+            </div>
+            </div>
     </div>
 </nav>
 
+<header class = "main">
+    <div class = "banner">
+        <h1 class = "banner-title">Computers For You</h1>
+        <button class = "banner-btn">shop now</button>
+    </div>
+</header>
+
   <div class="container">
     <div class="header">
-      <div class="logo">Computers</div>
+      <div class="logo">Our Computers</div>
     </div>
 
     <div class="computers">
         {laptops.map((laptop) => (
             <ItemDisplay name={laptop.name} price={laptop.price} img ={laptop.src}></ItemDisplay>
         ))}
+
+        <button class = "bag-button" data-id = "1">
+            <i class = "fas fa-shopping-cart"></i>
+            add to bag
+        </button>
     </div>
 
-    <div class="footer">
-      <p>E commis</p>
-    </div>
   </div>
 </body>
 
