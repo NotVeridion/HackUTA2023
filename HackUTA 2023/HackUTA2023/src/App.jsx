@@ -75,12 +75,14 @@ function App() {
                 <img src={nine} alt="navigation bars" style={{ width: '30px', height: '30px' }} />
             </span>
             <h3>E-Commerence</h3>
+            <div class = "cart-container">
             <div class = "cart-bin">
             <span class = "nav-icon">
                 <ShoppingListButton numberPasser={PageHandler} ></ShoppingListButton>
             </span>
             <div class = "cart-items">0</div>
-        </div>
+            </div>
+            </div>
     </div>
 </nav>
 

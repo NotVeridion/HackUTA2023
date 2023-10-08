@@ -37,14 +37,20 @@
   .nav-icon {
     font-size: 1.5rem;
   }
+
+  .cart-container {
+    position: relative;
+    cursor: pointer;
+  }
+
   .cart-btn {
     position: relative;
     cursor: pointer;
   }
   .cart-items {
     position: absolute;
-    top: 5px;
-    right: 150px;
+    top: -4px;
+    right: -10px;
     background: var(--primaryColor);
     padding: 0 5px;
     border-radius: 30%;
@@ -105,12 +111,22 @@
   }
   
   .computers {
-    /* background-color: #bccbde; */
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 15px;
     padding: 15px;
+  }
+  @media screen and (max-width: 768px) {
+    .computers {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .computers {
+      grid-template-columns: 1fr; 
+    }
   }
   
   .computers .card1{
@@ -157,6 +173,8 @@
     transform: translateX(101%);
     cursor: pointer;
   }
+
+  /* Shopping button */
   .bag-btn:hover {
     color: var(--mainWhite);
   }
