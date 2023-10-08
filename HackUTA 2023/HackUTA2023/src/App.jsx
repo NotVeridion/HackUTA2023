@@ -93,7 +93,7 @@ function App() {
 
   <div class="container">
     <div class="header">
-      <div class="logo">Computers</div>
+      <div class="logo">Our Computers</div>
     </div>
 
     <div class="computers">
@@ -102,9 +102,6 @@ function App() {
         ))}
     </div>
 
-    <div class="footer">
-      <p>E commis</p>
-    </div>
   </div>
 </body>
 

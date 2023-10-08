@@ -43,8 +43,8 @@
   }
   .cart-items {
     position: absolute;
-    top: -8px;
-    right: -8px;
+    top: 5px;
+    right: 150px;
     background: var(--primaryColor);
     padding: 0 5px;
     border-radius: 30%;
