@@ -41,7 +41,7 @@ def readpage(topics_url, titles, cost ,image, links):
 
     
 
-name = "car stuff"
+name = "iphone"
 page = 1
 url = "https://www.ebay.com/sch/i.html?_from=R40&_trksid=p4432023.m570.l1311&_nkw=" + name + "&_pgn="+ str(page)
 titles = []
@@ -58,3 +58,19 @@ readpage(url, titles, costs, images, links)
 ItemDict = {"title" : titles, "costs" : costs, "images" : images, "links" : links}
 df = pd.DataFrame(ItemDict)
 df.to_csv("topic.csv", index=None, header=None)
+for i in range(0, len(titles)):
+    titles[i] = titles[i].replace('"', '\\\"')
+    #print(titles[i])
+
+with open("Item.jsx", "w") as file:
+        file.write("const laptops = [\n")
+        end = ""
+        for i in range(0, len(titles)):
+            file.write("\t{\n")
+            file.write("\t\ttitle: \"" + titles[i] + "\",\n")
+            file.write("\t\tcosts: \"" + costs[i] + "\",\n")
+            file.write("\t\timages: \"" + images[i] + "\",\n")
+            file.write("\t\tlinks: \"" + links[i] + "\",\n")
+            file.write("\t},\n")
+        file.write("]")
+        
