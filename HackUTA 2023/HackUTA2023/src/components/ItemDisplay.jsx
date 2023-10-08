@@ -6,6 +6,7 @@ function ItemDisplay(props){
         <p class="title">{props.name}</p>
         <img src={props.img} alt={props.name} style={{ width: '250px', height: '150px' }}/>
         <p class = "price">{props.price}</p>
+        <a href={props.link}>To Seller</a>
       </div>
     )
 }

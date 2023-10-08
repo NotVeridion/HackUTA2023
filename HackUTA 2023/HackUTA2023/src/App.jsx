@@ -2,6 +2,7 @@ import { useState } from 'react'
 import NavBar from "./components/navbar"
 import ItemDisplay from "./components/ItemDisplay"
 import "./App.css"
+import Item from "./Item.jsx"
 import one from "./assets/macbook air.jpeg"
 import two from "./assets/macbook pro m1.jpeg"
 import three from "./assets/macbook pro m2.jpeg"
@@ -15,6 +16,8 @@ import ShoppingList from './components/ShoppingList'
 import ShoppingListButton from './components/ShoppingListButton'
 function App() {
     const[pageState, setPageState] = useState(0);
+    const[shopList, setShopList] = useState();
+
     function PageHandler(number){
         console.log("bye")
         setPageState(number);
@@ -22,7 +25,7 @@ function App() {
     function ReturnHandler(){
         setPageState(0);
     }
-     const laptops = [
+     const laptops = Item()/* [
         {
             name: "MacBook Air",
             price: "$749.99",
@@ -63,7 +66,8 @@ function App() {
             price: "$540.00",
             src: eight
         } 
-    ]
+    ]*/
+    console.log(laptops)
     return (
         <div>
         {pageState === 0 && <div>
@@ -100,7 +104,7 @@ function App() {
 
     <div class="computers">
         {laptops.map((laptop) => (
-            <ItemDisplay name={laptop.name} price={laptop.price} img ={laptop.src}></ItemDisplay>
+            <ItemDisplay name={laptop.title} price={laptop.cost} img ={laptop.images} link={laptop.links}></ItemDisplay>
         ))}
 
         <button class = "bag-button" data-id = "1">
