@@ -2,6 +2,11 @@ import { useState } from 'react'
 import NavBar from "./components/navbar"
 import Card from "./UI/Card"
 import "./App.css"
+import one from "./assets/macbook air.jpeg"
+import two from "./assets/macbook pro m1.jpeg"
+import three from "./assets/macbook pro m2.jpeg"
+import four from "./assets/HP Celeron.jpeg"
+import five from "./assets/Dell Inspiron.jpeg"
 function App() {
     
     return (
@@ -49,50 +54,52 @@ function App() {
             <div class="Computers">
                 <div class="card">
                     <p class="title">Macbook Air</p>
-                    <p>placeholder for image</p> 
-                    <p>placeholder for price</p> 
+                    <a href="default.asp">
+                    <img src={one} alt="Macbook img" style={{ width: '150px', height: '100px' }} />
+                    </a> 
+                    <p>$749.99</p> 
                     
                 </div>
                 <div class="card">
-                    <p class="title">Macbook Pro</p>
-                    <p>placeholder for image</p> 
-                    <p>placeholder for price</p> 
+                    <p class="title">Macbook Pro M1</p>
+                    <img src={two} alt="Macbook img" style={{ width: '150px', height: '100px' }} />
+                    <p>$998.99</p> 
 
                  </div>
                 <div class="card">
-                    <p class="title">Lenovo</p>
-                    <p>placeholder for image</p> 
-                    <p>placeholder for price</p> 
-
-                </div>
-                <div class="card">
-                     <p class="title">Windows</p>
-                     <p>placeholder for image</p> 
-                     <p>placeholder for price</p> 
-
-                </div>
-                 <div class="card">
-                    <p class="title">Lenovo</p>
-                    <p>placeholder for image</p> 
-                    <p>placeholder for price</p> 
-
-                </div>
-                 <div class="card">
-                    <p class="title">Surface Pro</p>
-                    <p>placeholder for image</p> 
-                    <p>placeholder for price</p> 
-
-                </div>
-                <div class="card">
-                    <p class="title">Lenovo</p>
-                    <p>placeholder for image</p> 
-                    <p>placeholder for price</p> 
-
-                </div>
-                <div class="card">
                     <p class="title">Macbook Pro M2</p>
-                    <p>placeholder for image</p> 
-                    <p>placeholder for price</p> 
+                    <img src={three} alt="Macbook img" style={{ width: '150px', height: '100px' }} />
+                    <p>$1199.99</p> 
+
+                </div>
+                <div class="card">
+                     <p class="title">HP Chromebook Intel Celeron</p>
+                     <img src={four} alt="Macbook img" style={{ width: '150px', height: '100px' }} />
+                     <p>$149.99</p> 
+
+                </div>
+                 <div class="card">
+                    <p class="title">Dell Inspiron</p>
+                    <img src={five} alt="Macbook img" style={{ width: '150px', height: '100px' }} />
+                    <p>$549.99</p> 
+
+                </div>
+                 <div class="card">
+                    <p class="title">HP Envy</p>
+                    <img src={one} alt="Macbook img" style={{ width: '150px', height: '100px' }} />
+                    <p>$499.99</p> 
+
+                </div>
+                <div class="card">
+                    <p class="title">Lenovo Yoga 7i</p>
+                    <img src={one} alt="Macbook img" style={{ width: '150px', height: '100px' }} />
+                    <p>$899.99</p> 
+
+                </div>
+                <div class="card">
+                    <p class="title">HP AMD Ryzen 3</p>
+                    <img src={one} alt="Macbook img" style={{ width: '150px', height: '100px' }} />
+                    <p>$540.00</p> 
 
                 </div>
             </div>
