@@ -22,7 +22,7 @@ function App() {
     function ReturnHandler(){
         setPageState(0);
     }
-    const laptops = [
+     const laptops = [
         {
             name: "MacBook Air",
             price: "$749.99",
@@ -62,7 +62,7 @@ function App() {
             name: "HP AMD Ryzen 3",
             price: "$540.00",
             src: eight
-        },
+        } 
     ]
     return (
         <div>
