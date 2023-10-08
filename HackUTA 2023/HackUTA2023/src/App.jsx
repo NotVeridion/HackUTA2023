@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import NavBar from "./components/navbar"
-import Card from "./UI/Card"
+import ItemDisplay from "./components/ItemDisplay"
 import "./App.css"
 import one from "./assets/macbook air.jpeg"
 import two from "./assets/macbook pro m1.jpeg"
@@ -93,11 +93,7 @@ function App() {
 
     <div class="computers">
         {laptops.map((laptop) => (
-            <div class="card1">
-            <p class="title">{laptop.name}</p>
-            <img src={laptop.src} alt={laptop.name} style={{ width: '250px', height: '150px' }}/>
-            <p class = "price">{laptop.price}</p>
-          </div>
+            <ItemDisplay name={laptop.name} price={laptop.price} img ={laptop.src}></ItemDisplay>
         ))}
     </div>
 
