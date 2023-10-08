@@ -20,6 +20,48 @@ function App() {
     function ReturnHandler(){
         setPageState(0);
     }
+    const laptops = [
+        {
+            name: "MacBook Air",
+            price: "$749.99",
+            src: one
+        },
+        {
+            name: "MacbookPro M1",
+            price: "$998.99",
+            src: two
+        },
+        {
+            name: "MacbookPro M2",
+            price: "$1199.99",
+            src: three
+        },
+        {
+            name: "HP Chromebook Intel Celeron",
+            price: "$149.99",
+            src: four
+        },
+        {
+            name: "Dell Inspiron",
+            price: "$549.99",
+            src: five
+        },
+        {
+            name: "HP Envy",
+            price: "$499.99",
+            src: six
+        },
+        {
+            name: "Lenovo Yoga 7i",
+            price: "$899.99",
+            src: seven
+        },
+        {
+            name: "HP AMD Ryzen 3",
+            price: "$540.00",
+            src: eight
+        },
+    ]
     return (
         <div>
         {pageState === 0 && <div>
@@ -49,46 +91,13 @@ function App() {
     </div>
 
     <div class="computers">
-      <div class="card1">
-        <p class="title">Macbook Air</p>
-        <img src={one} alt="Macbook Air" style={{ width: '250px', height: '150px' }}/>
-        <p class = "price">$749.99</p>
-      </div>
-      <div class="card1">
-        <p class="title">Macbook Pro M1</p>
-        <img src={two} alt="Macbook Pro M1" style={{ width: '250px', height: '200px' }}/>
-        <p class = "price">$998.99</p>
-      </div>
-      <div class="card1">
-        <p class="title">Macbook Pro M2</p>
-        <img src={three} alt="Macbook Pro M2" style={{ width: '250px', height: '200px' }}/>
-        <p class = "price">$1199.99</p>
-      </div>
-      <div class="card1">
-        <p class="title">HP Chromebook Intel Celeron</p>
-        <img src={four} alt="HP Chromebook Intel Celeron" style={{ width: '250px', height: '200px' }}/>
-        <p class = "price">$149.99</p>
-      </div>
-      <div class="card1">
-        <p class="title">Dell Inspiron</p>
-        <img src={five} alt="Dell Inspiron" style={{ width: '250px', height: '200px' }}/>
-        <p class = "price">$549.99</p>
-      </div>
-      <div class="card1">
-        <p class="title">HP Envy</p>
-        <img src={six} alt="HP Envy" style={{ width: '250px', height: '200px' }}/>
-        <p class = "price">$499.99</p>
-      </div>
-      <div class="card1">
-        <p class="title">Lenovo Yoga 7i</p>
-        <img src={seven} alt="Lenovo Yoga 7i" style={{ width: '250px', height: '200px' }}/>
-        <p class = "price">$899.99</p>
-      </div>
-      <div class="card1">
-        <p class="title">HP AMD Ryzen 3</p>
-        <img src={eight} alt="HP AMD Ryzen 3" style={{ width: '250px', height: '200px' }}/>
-        <p class = "price">$540.00</p>
-      </div>
+        {laptops.map((laptop) => (
+            <div class="card1">
+            <p class="title">{laptop.name}</p>
+            <img src={laptop.src} alt={laptop.name} style={{ width: '250px', height: '150px' }}/>
+            <p class = "price">{laptop.price}</p>
+          </div>
+        ))}
     </div>
 
     <div class="footer">
