@@ -26,7 +26,7 @@ function App() {
         <NavBar pageState={PageHandler}>
 
         </NavBar>
-        <Card>
+
         <body>
   <div class="container">
     <div class="header">
@@ -34,45 +34,45 @@ function App() {
     </div>
 
     <div class="computers">
-      <div class="card">
+      <div class="card1">
         <p class="title">Macbook Air</p>
-        <img src={one} alt="Macbook Air" style={{ width: '150px', height: '100px' }}/>
-        <p>$749.99</p>
+        <img src={one} alt="Macbook Air" style={{ width: '250px', height: '150px' }}/>
+        <p class = "price">$749.99</p>
       </div>
-      <div class="card">
+      <div class="card1">
         <p class="title">Macbook Pro M1</p>
-        <img src={two} alt="Macbook Pro M1" style={{ width: '150px', height: '100px' }}/>
-        <p>$998.99</p>
+        <img src={two} alt="Macbook Pro M1" style={{ width: '250px', height: '200px' }}/>
+        <p class = "price">$998.99</p>
       </div>
-      <div class="card">
+      <div class="card1">
         <p class="title">Macbook Pro M2</p>
-        <img src={three} alt="Macbook Pro M2" style={{ width: '150px', height: '100px' }}/>
-        <p>$1199.99</p>
+        <img src={three} alt="Macbook Pro M2" style={{ width: '250px', height: '200px' }}/>
+        <p class = "price">$1199.99</p>
       </div>
-      <div class="card">
+      <div class="card1">
         <p class="title">HP Chromebook Intel Celeron</p>
-        <img src={four} alt="HP Chromebook Intel Celeron" style={{ width: '150px', height: '100px' }}/>
-        <p>$149.99</p>
+        <img src={four} alt="HP Chromebook Intel Celeron" style={{ width: '250px', height: '200px' }}/>
+        <p class = "price">$149.99</p>
       </div>
-      <div class="card">
+      <div class="card1">
         <p class="title">Dell Inspiron</p>
-        <img src={five} alt="Dell Inspiron" style={{ width: '150px', height: '100px' }}/>
-        <p>$549.99</p>
+        <img src={five} alt="Dell Inspiron" style={{ width: '250px', height: '200px' }}/>
+        <p class = "price">$549.99</p>
       </div>
-      <div class="card">
+      <div class="card1">
         <p class="title">HP Envy</p>
-        <img src={six} alt="HP Envy" style={{ width: '150px', height: '100px' }}/>
-        <p>$499.99</p>
+        <img src={six} alt="HP Envy" style={{ width: '250px', height: '200px' }}/>
+        <p class = "price">$499.99</p>
       </div>
-      <div class="card">
+      <div class="card1">
         <p class="title">Lenovo Yoga 7i</p>
-        <img src={seven} alt="Lenovo Yoga 7i" style={{ width: '150px', height: '100px' }}/>
-        <p>$899.99</p>
+        <img src={seven} alt="Lenovo Yoga 7i" style={{ width: '250px', height: '200px' }}/>
+        <p class = "price">$899.99</p>
       </div>
-      <div class="card">
+      <div class="card1">
         <p class="title">HP AMD Ryzen 3</p>
-        <img src={eight} alt="HP AMD Ryzen 3" style={{ width: '150px', height: '100px' }}/>
-        <p>$540.00</p>
+        <img src={eight} alt="HP AMD Ryzen 3" style={{ width: '250px', height: '200px' }}/>
+        <p class = "price">$540.00</p>
       </div>
     </div>
 
@@ -82,7 +82,7 @@ function App() {
   </div>
 </body>
 
-        </Card>
+        
         </div>
         }
         {pageState === 1 && <ShoppingList OnReturn={ReturnHandler}></ShoppingList>}
