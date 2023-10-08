@@ -180,10 +180,15 @@
   }
 
   /* Shopping button */
-  .bag-btn:hover {
-    color: var(--mainWhite);
+  .item-container .bag-button {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
   }
-
-  .computers:hover .bag-btn {
-    transform: translateX(0);
+  
+  /* Display the "Add to Bag" button and apply the hover effect */
+  .item-container:hover .bag-button {
+    opacity: 1;
+    transform: translateY(0);
   }
+  
