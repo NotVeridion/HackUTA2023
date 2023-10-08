@@ -14,6 +14,9 @@ function App() {
         console.log("bye")
         setPageState(number);
     }
+    function ReturnHandler(){
+        setPageState(0);
+    }
     return (
         <div>
         {pageState === 0 && <div>
@@ -118,7 +121,7 @@ function App() {
         </Card>
         </div>
         }
-        {pageState === 1 && <ShoppingList></ShoppingList>}
+        {pageState === 1 && <ShoppingList OnReturn={ReturnHandler}></ShoppingList>}
         </div>
     )
 }
