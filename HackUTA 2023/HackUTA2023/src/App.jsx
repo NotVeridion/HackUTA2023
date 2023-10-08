@@ -2,6 +2,7 @@ import { useState } from 'react'
 import NavBar from "./components/navbar"
 import ItemDisplay from "./components/ItemDisplay"
 import "./App.css"
+import Item from "./Item.jsx"
 import one from "./assets/macbook air.jpeg"
 import two from "./assets/macbook pro m1.jpeg"
 import three from "./assets/macbook pro m2.jpeg"
@@ -16,6 +17,8 @@ import ShoppingList from './components/ShoppingList'
 import ShoppingListButton from './components/ShoppingListButton'
 function App() {
     const[pageState, setPageState] = useState(0);
+    const[shopList, setShopList] = useState();
+
     function PageHandler(number){
         console.log("bye")
         setPageState(number);
@@ -23,48 +26,8 @@ function App() {
     function ReturnHandler(){
         setPageState(0);
     }
-    const laptops = [
-        {
-            name: "MacBook Air",
-            price: "$749.99",
-            src: one
-        },
-        {
-            name: "MacbookPro M1",
-            price: "$998.99",
-            src: two
-        },
-        {
-            name: "MacbookPro M2",
-            price: "$1199.99",
-            src: three
-        },
-        {
-            name: "HP Chromebook Intel Celeron",
-            price: "$149.99",
-            src: four
-        },
-        {
-            name: "Dell Inspiron",
-            price: "$549.99",
-            src: five
-        },
-        {
-            name: "HP Envy",
-            price: "$499.99",
-            src: six
-        },
-        {
-            name: "Lenovo Yoga 7i",
-            price: "$899.99",
-            src: seven
-        },
-        {
-            name: "HP AMD Ryzen 3",
-            price: "$540.00",
-            src: eight
-        },
-    ]
+     const laptops = Item()
+    console.log(laptops)
     return (
         <div>
         {pageState === 0 && <div>
@@ -100,19 +63,16 @@ function App() {
     </div>
 
     <div class="computers">
-  {laptops.map((laptop, index) => (
-    <div class="item-container">
-      <ItemDisplay name={laptop.name} price={laptop.price} img={laptop.src}></ItemDisplay>
-      <button class="bag-button" data-id={index}>
+        {laptops.map((laptop) => (
+            <ItemDisplay name={laptop.title} price={laptop.cost} img ={laptop.images} link={laptop.links}></ItemDisplay>
+        ))}
+
+        <button class="bag-button" data-id={index}>
         <img src={ten} alt="shopping cart" style={{ width: '30px', height: '30px' }} />
         Add to Bag
       </button>
     </div>
-  ))}
 </div>
-
-
-  </div>
 </body>
 
         
