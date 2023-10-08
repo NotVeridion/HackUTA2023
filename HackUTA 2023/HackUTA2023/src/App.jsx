@@ -100,6 +100,11 @@ function App() {
         {laptops.map((laptop) => (
             <ItemDisplay name={laptop.name} price={laptop.price} img ={laptop.src}></ItemDisplay>
         ))}
+
+        <button class = "bag-button" data-id = "1">
+            <i class = "fas fa-shopping-cart"></i>
+            add to bag
+        </button>
     </div>
 
   </div>
