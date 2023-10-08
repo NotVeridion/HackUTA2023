@@ -12,6 +12,7 @@ import seven from "./assets/yoga.jpeg"
 import eight from "./assets/amd.jpeg"
 import nine from "./assets/bars.png"
 import ShoppingList from './components/ShoppingList'
+import ShoppingListButton from './components/ShoppingListButton'
 function App() {
     const[pageState, setPageState] = useState(0);
     function PageHandler(number){
@@ -66,20 +67,16 @@ function App() {
     return (
         <div>
         {pageState === 0 && <div>
-        <NavBar pageState={PageHandler}>
-
-        </NavBar>
-
         <body>
-<nav class = "navigation">
+        <nav class = "navigation">
     <div class = "navbar-center">
             <span class = "nav-icon">
-                <i class = "fas fa-bars"></i> 
+                <img src={nine} alt="navigation bars" style={{ width: '30px', height: '30px' }} />
             </span>
             <h3>E-Commerence</h3>
             <div class = "cart-bin">
             <span class = "nav-icon">
-                <i class = "fas fa-cart-plus"></i>
+                <ShoppingListButton numberPasser={PageHandler} ></ShoppingListButton>
             </span>
             <div class = "cart-items">0</div>
         </div>
