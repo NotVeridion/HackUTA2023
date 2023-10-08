@@ -1,6 +1,5 @@
 import cart_img from "../assets/shopping_cart.jpg"
 import "./ShoppingListButton.css"
-import { useState } from 'react'
 function ShoppingListButton(props){
     function ClickHandler(){
         console.log("hi")
