@@ -1,11 +1,15 @@
 import "./navbar.css"
 import ShoppingListButton from "./ShoppingListButton"
-function NavBar()
+function NavBar(props)
 {
+    function PageHandler(number){
+        console.log("hello")
+        props.pageState(number)
+    }
     return (
         <nav class="navbar">
             <p>Navbar Working</p>
-            <ShoppingListButton></ShoppingListButton>
+            <ShoppingListButton numberPasser={PageHandler} ></ShoppingListButton>
         </nav>
     )
 }

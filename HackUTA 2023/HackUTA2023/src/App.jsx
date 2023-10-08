@@ -2,19 +2,17 @@ import { useState } from 'react'
 import NavBar from "./components/navbar"
 import Card from "./UI/Card"
 import "./App.css"
-<<<<<<< HEAD
 import ShoppingList from './components/ShoppingList'
-=======
->>>>>>> 85101d52dd1324c046e0df45cfe36b32bc1d9f2b
 function App() {
-    const[pageState, setPageState] = useState(0)
-    function PageHandler(){
-        setPageState(1);
+    const[pageState, setPageState] = useState(0);
+    function PageHandler(number){
+        console.log("bye")
+        setPageState(number);
     }
     return (
         <div>
         {pageState === 0 && <div>
-        <NavBar OnChangePage={PageHandler}>
+        <NavBar pageState={PageHandler}>
 
         </NavBar>
         <Card>
