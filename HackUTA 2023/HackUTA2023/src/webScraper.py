@@ -58,3 +58,20 @@ readpage(url, titles, costs, images, links)
 ItemDict = {"title" : titles, "costs" : costs, "images" : images, "links" : links}
 df = pd.DataFrame(ItemDict)
 df.to_csv("topic.csv", index=None, header=None)
+for i in range(0, len(titles)):
+    titles[i] = titles[i].replace('"', '\\\"')
+    #print(titles[i])
+
+with open("Item.jsx", "w") as file:
+        file.write("const laptops = [\n")
+        end = ""
+        for i in range(0, len(titles)):
+            file.write("\t{\n")
+            file.write("\t\ttitle: \"" + titles[i] + "\",\n")
+            print("\t\ttitle: \"" + titles[i] + "\",\n")
+            file.write("\t\tcosts: \"" + costs[i] + "\",\n")
+            file.write("\t\timages: \"" + images[i] + "\",\n")
+            file.write("\t\tlinks: \"" + links[i] + "\",\n")
+            file.write("\t},\n")
+        file.write("]")
+        
