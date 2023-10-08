@@ -11,6 +11,7 @@ import six from "./assets/hp envy.png"
 import seven from "./assets/yoga.jpeg"
 import eight from "./assets/amd.jpeg"
 import nine from "./assets/bars.png"
+import ten from "./assets/shopping-cart.webp"
 import ShoppingList from './components/ShoppingList'
 import ShoppingListButton from './components/ShoppingListButton'
 function App() {
@@ -99,15 +100,17 @@ function App() {
     </div>
 
     <div class="computers">
-        {laptops.map((laptop) => (
-            <ItemDisplay name={laptop.name} price={laptop.price} img ={laptop.src}></ItemDisplay>
-        ))}
-
-        <button class = "bag-button" data-id = "1">
-            <i class = "fas fa-shopping-cart"></i>
-            add to bag
-        </button>
+  {laptops.map((laptop, index) => (
+    <div class="item-container">
+      <ItemDisplay name={laptop.name} price={laptop.price} img={laptop.src}></ItemDisplay>
+      <button class="bag-button" data-id={index}>
+        <img src={ten} alt="shopping cart" style={{ width: '30px', height: '30px' }} />
+        Add to Bag
+      </button>
     </div>
+  ))}
+</div>
+
 
   </div>
 </body>
