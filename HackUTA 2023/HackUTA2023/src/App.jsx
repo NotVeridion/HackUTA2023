@@ -10,6 +10,7 @@ import five from "./assets/Dell Inspiron.jpeg"
 import six from "./assets/hp envy.png"
 import seven from "./assets/yoga.jpeg"
 import eight from "./assets/amd.jpeg"
+import nine from "./assets/bars.png"
 import ShoppingList from './components/ShoppingList'
 function App() {
     const[pageState, setPageState] = useState(0);
@@ -75,7 +76,7 @@ function App() {
             <span class = "nav-icon">
                 <i class = "fas fa-bars"></i> 
             </span>
-            <img></img>
+            <h3>E-Commerence</h3>
             <div class = "cart-bin">
             <span class = "nav-icon">
                 <i class = "fas fa-cart-plus"></i>

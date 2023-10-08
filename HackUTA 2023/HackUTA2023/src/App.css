@@ -4,7 +4,7 @@
     box-sizing: border-box;
   }
 
-  .navbar {
+  .navigation {
     position: sticky;
     top: 0;
     height: 60px;
