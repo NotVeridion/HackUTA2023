@@ -95,7 +95,6 @@
   .container div {
     padding: 15px;
     font-size: 32px;
-    font-family: Helvetica;
     font-weight: bold;
     color: black;
   }
@@ -103,43 +102,6 @@
   .header {
     color: black;
     background-color: white;
-  }
-  
-  .menu ul,
-  .menu li {
-    font-size: 16px;
-    list-style-type: none;
-  }
-  
-  .sidebar {
-    background-color: #FF7755;
-    grid-row: 2 / 4;
-    display: grid;
-    gap: 50px;
-  }
-  
-  .sidebar .photo {
-    background-color: white;
-    color: black;
-    font-size: 12px;
-    font-weight: normal;
-    border-radius: 10px;
-  }
-  
-  .sidebar .side-content {
-    background-color: white;
-    color: black;
-    font-size: 16px;
-    font-weight: normal;
-  }
-  
-  .nav {
-    background-color: #FF7755;
-  }
-  
-  .nav ul li {
-    font-size: 16px;
-    text-transform: uppercase;
   }
   
   .computers {
@@ -166,7 +128,7 @@
   
   .card1 p {
     color: black;
-    font-weight: normal;
+    font-weight: bold;
     font-size: 14px;
     padding: 5px;
   }
@@ -177,17 +139,28 @@
   }
 
   .card1 .price{
+    font-weight: 600;
     color: green;
   }
   
-  .footer {
-    background-color: white;
+  .bag-btn {
     position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 2.5rem;     
+    top: 70%;
+    right: 0;
+    background: var(--primaryColor);
+    border: none;
+    text-transform: uppercase;
+    padding: 0.5rem 0.75rem;
+    letter-spacing: var(--mainSpacing);
+    font-weight: bold;
+    transition: var(--mainTransition);
+    transform: translateX(101%);
+    cursor: pointer;
   }
-  
-  .footer p {
-    font-size: 13px
+  .bag-btn:hover {
+    color: var(--mainWhite);
+  }
+
+  .computers:hover .bag-btn {
+    transform: translateX(0);
   }
