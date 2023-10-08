@@ -62,12 +62,10 @@ function App() {
                 </ul>
             </div>
 
-            <div class="Computers">
+            <div class="computers">
                 <div class="card">
                     <p class="title">Macbook Air</p>
-                    <a href="default.asp">
                     <img src={one} alt="Macbook img" style={{ width: '150px', height: '100px' }} />
-                    </a> 
                     <p>$749.99</p> 
                     
                 </div>
