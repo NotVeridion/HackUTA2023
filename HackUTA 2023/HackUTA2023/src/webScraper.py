@@ -41,7 +41,7 @@ def readpage(topics_url, titles, cost ,image, links):
 
     
 
-name = "car stuff"
+name = "iphone"
 page = 1
 url = "https://www.ebay.com/sch/i.html?_from=R40&_trksid=p4432023.m570.l1311&_nkw=" + name + "&_pgn="+ str(page)
 titles = []
@@ -68,7 +68,6 @@ with open("Item.jsx", "w") as file:
         for i in range(0, len(titles)):
             file.write("\t{\n")
             file.write("\t\ttitle: \"" + titles[i] + "\",\n")
-            print("\t\ttitle: \"" + titles[i] + "\",\n")
             file.write("\t\tcosts: \"" + costs[i] + "\",\n")
             file.write("\t\timages: \"" + images[i] + "\",\n")
             file.write("\t\tlinks: \"" + links[i] + "\",\n")
