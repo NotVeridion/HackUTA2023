@@ -7,12 +7,16 @@ import two from "./assets/macbook pro m1.jpeg"
 import three from "./assets/macbook pro m2.jpeg"
 import four from "./assets/HP Celeron.jpeg"
 import five from "./assets/Dell Inspiron.jpeg"
+import ShoppingList from './components/ShoppingList'
 function App() {
-    
+    const[pageState, setPageState] = useState(0)
+    function PageHandler(){
+        setPageState(1);
+    }
     return (
         <div>
-
-        <NavBar>
+        {pageState === 0 && <div>
+        <NavBar OnChangePage={PageHandler}>
 
         </NavBar>
         <Card>
@@ -112,7 +116,9 @@ function App() {
   </body>
         </Card>
         </div>
+        }
+        {pageState === 1 && <ShoppingList></ShoppingList>}
+        </div>
     )
 }
-
 export default App
