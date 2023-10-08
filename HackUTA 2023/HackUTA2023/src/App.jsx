@@ -7,6 +7,9 @@ import two from "./assets/macbook pro m1.jpeg"
 import three from "./assets/macbook pro m2.jpeg"
 import four from "./assets/HP Celeron.jpeg"
 import five from "./assets/Dell Inspiron.jpeg"
+import six from "./assets/hp envy.png"
+import seven from "./assets/yoga.jpeg"
+import eight from "./assets/amd.jpeg"
 import ShoppingList from './components/ShoppingList'
 function App() {
     const[pageState, setPageState] = useState(0);
@@ -67,43 +70,43 @@ function App() {
                 </div>
                 <div class="card">
                     <p class="title">Macbook Pro M1</p>
-                    <img src={two} alt="Macbook img" style={{ width: '150px', height: '100px' }} />
+                    <img src={two} alt="Macbook Pro M1 img" style={{ width: '150px', height: '100px' }} />
                     <p>$998.99</p> 
 
                  </div>
                 <div class="card">
                     <p class="title">Macbook Pro M2</p>
-                    <img src={three} alt="Macbook img" style={{ width: '150px', height: '100px' }} />
+                    <img src={three} alt="Macbook Pro M2 img" style={{ width: '150px', height: '100px' }} />
                     <p>$1199.99</p> 
 
                 </div>
                 <div class="card">
                      <p class="title">HP Chromebook Intel Celeron</p>
-                     <img src={four} alt="Macbook img" style={{ width: '150px', height: '100px' }} />
+                     <img src={four} alt="HP Chromebook img" style={{ width: '150px', height: '100px' }} />
                      <p>$149.99</p> 
 
                 </div>
                  <div class="card">
                     <p class="title">Dell Inspiron</p>
-                    <img src={five} alt="Macbook img" style={{ width: '150px', height: '100px' }} />
+                    <img src={five} alt="Dell Inspiron img" style={{ width: '150px', height: '100px' }} />
                     <p>$549.99</p> 
 
                 </div>
                  <div class="card">
                     <p class="title">HP Envy</p>
-                    <img src={one} alt="Macbook img" style={{ width: '150px', height: '100px' }} />
+                    <img src={six} alt="HP Envy img" style={{ width: '150px', height: '100px' }} />
                     <p>$499.99</p> 
 
                 </div>
                 <div class="card">
                     <p class="title">Lenovo Yoga 7i</p>
-                    <img src={one} alt="Macbook img" style={{ width: '150px', height: '100px' }} />
+                    <img src={seven} alt="Lenovo Yoga img" style={{ width: '150px', height: '100px' }} />
                     <p>$899.99</p> 
 
                 </div>
                 <div class="card">
                     <p class="title">HP AMD Ryzen 3</p>
-                    <img src={one} alt="Macbook img" style={{ width: '150px', height: '100px' }} />
+                    <img src={eight} alt="HP AMD img" style={{ width: '150px', height: '100px' }} />
                     <p>$540.00</p> 
 
                 </div>
