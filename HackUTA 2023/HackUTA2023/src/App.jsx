@@ -28,6 +28,21 @@ function App() {
         </NavBar>
 
         <body>
+<nav class = "navigation">
+    <div class = "navbar-center">
+            <span class = "nav-icon">
+                <i class = "fas fa-bars"></i> 
+            </span>
+            <img></img>
+            <div class = "cart-bin">
+            <span class = "nav-icon">
+                <i class = "fas fa-cart-plus"></i>
+            </span>
+            <div class = "cart-items">0</div>
+        </div>
+    </div>
+</nav>
+
   <div class="container">
     <div class="header">
       <div class="logo">Computers</div>
